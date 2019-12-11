@@ -18,15 +18,15 @@ public class CEPintegrationImpl implements CEPintegration{
 	@Autowired
 	RestTemplate restTemplate;
 
-	 
+
 	@Override
 	public CepRestResponse buscarCep(String cep) {
 
-	String uri = "http://viacep.com.br/ws/{cep}/json/";
-		
+		String uri = "http://viacep.com.br/ws/{cep}/json/";
+
 		Map<String, String> params = new HashMap<String, String>();
-	    params.put("cep", cep);
-	    return restTemplate.getForObject(uri, CepRestResponse.class, params);
+		params.put("cep", cep);
+		return restTemplate.getForObject(uri, CepRestResponse.class, params);
 	}
 
 }

@@ -18,7 +18,6 @@ public class ControllerConverterImpl implements ControllerConverter{
 	             .complemento(responseRest.getComplemento())
 	             .localidade(responseRest.getLocalidade())
 	             .build();
-	              
 	}
 
 }

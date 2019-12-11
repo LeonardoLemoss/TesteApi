@@ -26,13 +26,8 @@ import com.example.api.service.CustomerService;
 @RequestMapping("/customers")
 public class CustomerController {
 
-	private CustomerService service;
-
 	@Autowired
-	public CustomerController(CustomerService service) {
-		this.service = service;
-	}
-
+	private CustomerService service;
 
 	@RequestMapping(value = "/cadastra", method =  RequestMethod.POST)
 	public Customer cadastra(@Valid @RequestBody Customer customer)
