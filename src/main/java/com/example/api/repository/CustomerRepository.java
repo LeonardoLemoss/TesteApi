@@ -10,4 +10,5 @@ public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
 	List<Customer> findAllByOrderByNameAsc();
 
+
 }

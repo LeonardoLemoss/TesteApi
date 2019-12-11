@@ -3,6 +3,7 @@ package com.example.api.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,16 +28,21 @@ public class CustomerService {
 		return repository.findById(id);
 	}
 
-	public void salva(Customer customer) {
-		repository.save(customer);
+	public Customer salva(Customer customer) {
+		return repository.save(customer);
 	}
 
-	public void edita(Customer customer) {
-		repository.save(customer);
+	public Customer edita(Customer customer) {
+		return repository.save(customer);
 	}
 
-	public void deleta(Long id) {
-		repository.deleteById(id);
+	public void save(Customer c) {
+		repository.save(c);
+
+	}
+
+	public void delete(Customer customer) {
+		repository.delete(customer);
 	}
 
 }
