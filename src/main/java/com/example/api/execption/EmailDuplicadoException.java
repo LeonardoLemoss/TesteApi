@@ -9,8 +9,8 @@ public class EmailDuplicadoException extends ErroExceptions{
 		super(409,"duplicidade erro");
 		super.setCode(409);
 		super.setHttpStatus(HttpStatus.CONFLICT);
-		super.setMensagemUsuario("Renavam Já Existe.");
-		super.setOrigem("validaRenavam");
+		super.setMensagemUsuario("Email Já Existe.");
+		super.setOrigem("validaEmail");
 	
 	}
 	

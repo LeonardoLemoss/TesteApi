@@ -7,5 +7,4 @@ public interface ControllerConverter {
 
 	CorreirosCep converterController(CepRestResponse responseRest);
 	
-	
 }

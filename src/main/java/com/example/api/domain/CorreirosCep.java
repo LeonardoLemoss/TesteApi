@@ -14,15 +14,19 @@ import lombok.NoArgsConstructor;
 @ApiModel(value = "CEP")
 public class CorreirosCep {
 
-	  @ApiModelProperty(value = "")
+	  @ApiModelProperty(value = "CEP")
 	  private String cep;
-	    
+	  
+	  @ApiModelProperty(value = "lOGRADOURO")
 	  private String logradouro;
-	    
+	  
+	  @ApiModelProperty(value = "BAIRRO")
 	  private String bairro;
 
+	  @ApiModelProperty(value = "COMPLEMENTO")
 	  private String complemento;
 	    
+	  @ApiModelProperty(value = "LOCALIDADE")
 	  private String localidade;
 
 	  
